@@ -5,13 +5,18 @@ Computational Fluid Dynamics:
 Semi Implicit Method for Pressure Linked Equations
 
 SIMPLE is one of the algorithms used in computational fluid dynamics.
-It can help identify appropriatge pressure of the system, based on
+It can help identify appropriate pressure of the system, based on
 initial pressure guess and initial velocity field guess.
 
 The algorithm is based on Navier-Stokes and "Stokes Problem."
-The general idea is to identify corrected pressure. 
+The general idea is to identify corrected pressure array.
 
-User can enter pressure guess, velocity guess, using a complete system
-matrix, total number of velocitynodes, initial velocity.
+User can enter initial pressure guess, initial velocity guess, momentum
+matrix define smallest magnitude eigenvalue matrix (Main Matrix) and
+total number of velocity nodes.
 
 The program can be executed using IDE such as Visual Studio.
+
+NOTE: Math.NET method for solving linear systems of equations,
+did not function properly. Algorithm for solving Ax=B, needs to
+be defined. One of the algorithms, known to do that is QR.
