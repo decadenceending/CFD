@@ -15,8 +15,13 @@ User can enter initial pressure guess, initial velocity guess, momentum
 matrix define smallest magnitude eigenvalue matrix (Main Matrix) and
 total number of velocity nodes.
 
+The above listed inputs, can be generated using initial and boundary conditions,
+from previous computations.
+
 The program can be executed using IDE such as Visual Studio.
 
-NOTE: Math.NET method for solving linear systems of equations,
+To Do:
+
+Math.NET method for solving linear systems of equations,
 did not function properly. Algorithm for solving Ax=B, needs to
 be defined. One of the algorithms, known to do that is QR.
